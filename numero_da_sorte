@@ -1,0 +1,42 @@
+print("********************************************")
+print("* Acerte o Número da Sorte e Ganhe Prêmios *")
+print("********************************************\n\n")
+
+#Variáveis
+numero_sorte = 42
+total_tentativas = 3
+rodada = 1
+
+#função .format para as {}, substitui as palavras
+#while condição enquanto é verdadeira
+
+#while(rodada <= total_tentativas):
+#    print("Tentativa {} de {}".format(rodada,total_tentativas))
+#    numero_usr = input("Digite o número da sorte de 0 a 50: ")
+#    print("Você digitou \n", numero_usr)
+#    chute = int(numero_usr)
+for rodada in range(1, total_tentativas + 1):
+    print("Tentativa {} de {}".format(rodada,total_tentativas))
+    numero_usr = input("Digite o número da sorte de 0 a 50: ")
+    print("Você digitou \n", numero_usr)
+    chute = int(numero_usr)
+
+
+
+# Condição
+    acertou = chute == numero_sorte
+    maior   = chute >  numero_sorte
+    menor   = chute <  numero_sorte
+
+
+    if (acertou):
+        print("***Você acaba de ganhar Prêmios com o Número da Sorte***\n\n""PARABÉNS")
+    else:
+        if(maior):
+            print("Uma pena! Você escolheu um número maior do que o da Sorte.\n""Tente Mais Tarde!")
+        elif(menor):
+            print("O número escolhido foi menor do que o número da sorte.\n""Tente Mais Tarde!")
+
+    rodada = rodada + 1
+
+print("Fim do jogo!")
