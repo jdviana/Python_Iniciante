@@ -1,0 +1,16 @@
+print("********************************")
+print("Bem Vindo ao jogo de Advinhação!")
+print("********************************")
+
+numero_secreto = 42
+
+chute_usr = input("Digite o numéro secreto: ")
+
+print("Você digitou ", chute_usr)
+
+chute = int(chute_usr)
+
+if(numero_secreto == chute):
+    print("Você acertou!!!")
+else:
+    print("Você errou!!")
