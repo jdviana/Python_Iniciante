@@ -1,0 +1,25 @@
+print(17*"*")
+print("*CALCULADORA IMC*")
+print(17*("*"))
+def calcular_imc():
+
+  idade    = int(input("Informe a sua idade: "))
+  peso    = float(input("Informe o seu peso: "))
+  altura  = float(input("Informe a sua altura: "))
+  imc      =  float()
+  imc = peso / (altura **2)
+
+  if imc < 18.5:
+    print("De acordo com os seus dados, o seu IMC é %.2f, você está no nÍVEL de MAGREZA!"%(imc))
+  elif imc >= 18.5 and imc <= 24.9:
+    print("De acordo com os seus dados, o seu IMC é %.2f, você está no nÍVEL de EUTROFEC0(NORMAL)!"%(imc))
+  elif imc >= 25 and imc <= 29.9:
+    print("De acordo com os seus dados, o seu IMC é %.2f, você está no nÍVEL de SOBREPESO!"%(imc))
+  elif imc >= 30 and imc <= 34.9:
+    print("De acordo com os seus dados, o seu IMC é %.2f, você está no nÍVEL de OBESIDADE 1"%(imc))
+  elif imc >= 35 and imc <= 39.9:
+    print("De acordo com os seus dados, o seu IMC é %.2f, você está no nÍVEL de OBESIDADE 2!"%(imc))
+  else:
+    print("De acordo com os seus dados, o seu IMC é %.2f, VOCÊ TÁ NA MERDA!!"%(imc))
+  calcular_imc()
+calcular_imc()
